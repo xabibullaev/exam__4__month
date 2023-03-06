@@ -1,0 +1,48 @@
+.header {
+  margin-top: 15px;
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__search {
+    position: relative;
+    margin-left: 56px;
+    padding-left: 50px;
+    width: 670px;
+    height: 48px;
+    background: #f8fafd;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.24);
+  }
+  &__ligh-btn {
+    width: 23px;
+    height: 23px;
+    margin-left: 105px;
+    border: none;
+    background-color: transparent;
+  }
+  &__logout {
+    margin-left: 20px;
+    border: none;
+    width: 99px;
+    height: 40px;
+    background: #0d75ff;
+    border-radius: 4px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+}

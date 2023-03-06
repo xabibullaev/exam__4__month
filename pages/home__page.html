@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/home__page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Exam__4__Javoxir__Xabibullaev</title>
   </head>
   <body>
@@ -31,20 +38,49 @@
 
     <!-- main__part -->
     <main>
-      <div class="container">
-        <!-- filter__section -->
-        <section class="filter">
-          <div class="filter__box">
+      <!-- swiper__part -->
+      <section class="hero">
+        <div class="cantainer">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  width="1240"
+                  data-v-8f82691c=""
+                  src="https://images.uzum.uz/cfqov5nhj8j9g69850s0/main_page_banner.jpg"
+                  alt="Акции, подборки товаров и новости Uzum"
+                />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <!-- swiper__part--end -->
+
+      <!-- filter__section -->
+      <section class="filter">
+        <div class="filter__box">
+          <div class="container filter__row">
             <p class="filter__result">Showing 18 Result(s)</p>
-            <div class="filter-flex">
+            <div class="filter__flex">
               <img src="../img/calendar.svg" alt="icon" />
               <button class="filter__btn">Order by newest</button>
             </div>
           </div>
-        </section>
-        <!-- filter__section-end -->
-        <!-- aside__part -->
-        <section class="aside">
+        </div>
+      </section>
+      <!-- filter__section-end -->
+      <!-- aside__part -->
+      <section class="aside">
+        <div class="container">
           <div class="aside__box">
             <div class="aside__content">
               <h3 class="aside__title">Bookmarks</h3>
@@ -52,11 +88,49 @@
                 If you don’t like to read, you haven’t found the right book
               </p>
             </div>
-            <ul class="aside__liss"></ul>
+            <ul class="aside__liss">
+              <li class="aside__item">
+                <div class="aside__book-inf">
+                  <p class="aside__book-name">Python</p>
+                  <p class="aside__book-author">David M. Beazley</p>
+                </div>
+                <button class="aside__read">
+                  <a href="#"><img src="../img/open__book.png" alt="icon" /></a>
+                </button>
+                <button class="aside__delete">
+                  <a href="#"><img src="../img/delete.png" alt="icon" /></a>
+                </button>
+              </li>
+            </ul>
           </div>
-        </section>
-        <!-- aside__part-end -->
-      </div>
+        </div>
+      </section>
+      <!-- aside__part-end -->
+      <!-- book__part -->
+      <section class="book">
+        <div class="container">
+          <div class="book__box">
+            <ul class="book__list">
+              <li class="book__item">
+                <img src="../img/book__card.png" alt="book" class="book__img" />
+                <div class="book__content">
+                  <p class="book__name">Python</p>
+                  <p class="book__author">David M. Beazley</p>
+                  <p class="book__year">2009</p>
+                </div>
+                <div class="book__btns">
+                  <button class="book__bookmark">Bookmark</button>
+                  <button class="book__more">More Info</button>
+                  <button class="book__read">
+                    <a href="#" class="book__link"></a>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- book__part-end -->
     </main>
     <!-- main__part-end -->
 
@@ -70,12 +144,14 @@
     <!-- templade__part-end -->
 
     <!-- js__part -->
+    <script type="module" src="../js/swiper.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/books__data.js"></script>
     <script src="../js/find__elements.js"></script>
     <script src="../js/render__books.js"></script>
     <script src="../js/search.js"></script>
     <script src="../js/selected__books.js"></script>
+    <script src="../js/swipre.js"></script>
     <!-- js__part-end -->
   </body>
 </html>
