@@ -1,0 +1,42 @@
+.swiper {
+  width: 945px;
+  margin-top: 26px;
+  margin-left: 300px;
+
+  .swiper-wrapper .swiper-slide img {
+    border-radius: 14px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.6;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+  }
+
+  .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    background: #ffffffad;
+    opacity: 0.5;
+    margin-right: 0 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 6px;
+    height: 6px;
+    background: #ffffffad;
+    opacity: 1;
+    margin-right: 0 !important;
+  }
+}

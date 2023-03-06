@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="../css/home__page.css" />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
@@ -38,18 +42,63 @@
 
     <!-- main__part -->
     <main>
+      <!-- filter__section -->
+      <section class="filter">
+        <div class="filter__box">
+          <div class="container filter__row">
+            <p class="filter__result">Showing 18 Result(s)</p>
+            <div class="filter__flex">
+              <img src="../img/calendar.svg" alt="icon" />
+              <button class="filter__btn">Order by newest</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- filter__section-end -->
       <!-- swiper__part -->
       <section class="hero">
-        <div class="cantainer">
+        <div class="container">
           <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
                 <img
-                  width="1240"
+                  width="945"
                   data-v-8f82691c=""
-                  src="https://images.uzum.uz/cfqov5nhj8j9g69850s0/main_page_banner.jpg"
+                  src="../img/swiper1.jpg"
+                  alt="Акции, подборки товаров и новости Uzum"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  width="945"
+                  data-v-8f82691c=""
+                  src="../img/swiper2.jpg"
+                  alt="Акции, подборки товаров и новости Uzum"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  width="945"
+                  data-v-8f82691c=""
+                  src="../img/swiper3.jpg"
+                  alt="Акции, подборки товаров и новости Uzum"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  width="945"
+                  data-v-8f82691c=""
+                  src="../img/swiper4.jpg"
+                  alt="Акции, подборки товаров и новости Uzum"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  width="945"
+                  data-v-8f82691c=""
+                  src="../img/swiper5.jpg"
                   alt="Акции, подборки товаров и новости Uzum"
                 />
               </div>
@@ -64,20 +113,6 @@
         </div>
       </section>
       <!-- swiper__part--end -->
-
-      <!-- filter__section -->
-      <section class="filter">
-        <div class="filter__box">
-          <div class="container filter__row">
-            <p class="filter__result">Showing 18 Result(s)</p>
-            <div class="filter__flex">
-              <img src="../img/calendar.svg" alt="icon" />
-              <button class="filter__btn">Order by newest</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- filter__section-end -->
       <!-- aside__part -->
       <section class="aside">
         <div class="container">
@@ -144,14 +179,14 @@
     <!-- templade__part-end -->
 
     <!-- js__part -->
-    <script type="module" src="../js/swiper.js"></script>
     <script src="../js/main.js"></script>
+    <script type="module" src="../js/swiper.js"></script>
     <script src="../js/books__data.js"></script>
     <script src="../js/find__elements.js"></script>
     <script src="../js/render__books.js"></script>
     <script src="../js/search.js"></script>
     <script src="../js/selected__books.js"></script>
-    <script src="../js/swipre.js"></script>
+
     <!-- js__part-end -->
   </body>
 </html>

@@ -538,7 +538,6 @@ template {
 }
 .filter__row {
   display: flex;
-  vertical-align: middle;
 }
 .filter__flex {
   position: relative;
@@ -547,7 +546,7 @@ template {
 .filter__btn {
   margin-top: 11px;
   padding-left: 42px;
-  margin-left: 606px;
+  margin-left: 630px;
   z-index: 2;
   border: none;
   position: relative;
@@ -566,7 +565,45 @@ template {
   z-index: 20;
   position: absolute;
   top: 15px;
-  left: 619px;
+  left: 639px;
+}
+
+.swiper {
+  width: 945px;
+  margin-top: 26px;
+  margin-left: 300px;
+}
+.swiper .swiper-wrapper .swiper-slide img {
+  border-radius: 14px;
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+.swiper .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.6784313725);
+  opacity: 0.5;
+  margin-right: 0 !important;
+}
+.swiper .swiper-pagination-bullet-active {
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.6784313725);
+  opacity: 1;
+  margin-right: 0 !important;
 }
 
 /*# sourceMappingURL=home__page.css.map */
