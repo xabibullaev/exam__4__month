@@ -1,8 +1,9 @@
 .swiper {
   width: 945px;
   margin-top: 26px;
-  margin-left: 300px;
-
+  margin-left: 600px;
+  margin-left: auto;
+  margin-right: auto;
   .swiper-wrapper .swiper-slide img {
     border-radius: 14px;
   }
@@ -29,7 +30,6 @@
     height: 6px;
     background: #ffffffad;
     opacity: 0.5;
-    margin-right: 0 !important;
   }
 
   .swiper-pagination-bullet-active {
@@ -37,6 +37,5 @@
     height: 6px;
     background: #ffffffad;
     opacity: 1;
-    margin-right: 0 !important;
   }
 }

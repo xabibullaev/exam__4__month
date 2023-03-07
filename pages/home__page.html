@@ -55,117 +55,94 @@
         </div>
       </section>
       <!-- filter__section-end -->
-      <!-- swiper__part -->
-      <section class="hero">
-        <div class="container">
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img
-                  width="945"
-                  data-v-8f82691c=""
-                  src="../img/swiper1.jpg"
-                  alt="Акции, подборки товаров и новости Uzum"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  width="945"
-                  data-v-8f82691c=""
-                  src="../img/swiper2.jpg"
-                  alt="Акции, подборки товаров и новости Uzum"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  width="945"
-                  data-v-8f82691c=""
-                  src="../img/swiper3.jpg"
-                  alt="Акции, подборки товаров и новости Uzum"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  width="945"
-                  data-v-8f82691c=""
-                  src="../img/swiper4.jpg"
-                  alt="Акции, подборки товаров и новости Uzum"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  width="945"
-                  data-v-8f82691c=""
-                  src="../img/swiper5.jpg"
-                  alt="Акции, подборки товаров и новости Uzum"
-                />
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-        </div>
-      </section>
-      <!-- swiper__part--end -->
-      <!-- aside__part -->
-      <section class="aside">
-        <div class="container">
+      <div class="main-flex container">
+        <!-- aside__part -->
+        <section class="aside">
           <div class="aside__box">
-            <div class="aside__content">
-              <h3 class="aside__title">Bookmarks</h3>
-              <p class="aside__text">
-                If you don’t like to read, you haven’t found the right book
-              </p>
-            </div>
-            <ul class="aside__liss">
-              <li class="aside__item">
-                <div class="aside__book-inf">
-                  <p class="aside__book-name">Python</p>
-                  <p class="aside__book-author">David M. Beazley</p>
-                </div>
-                <button class="aside__read">
-                  <a href="#"><img src="../img/open__book.png" alt="icon" /></a>
-                </button>
-                <button class="aside__delete">
-                  <a href="#"><img src="../img/delete.png" alt="icon" /></a>
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- aside__part-end -->
-      <!-- book__part -->
-      <section class="book">
-        <div class="container">
-          <div class="book__box">
-            <ul class="book__list">
-              <li class="book__item">
-                <img src="../img/book__card.png" alt="book" class="book__img" />
-                <div class="book__content">
-                  <p class="book__name">Python</p>
-                  <p class="book__author">David M. Beazley</p>
-                  <p class="book__year">2009</p>
-                </div>
-                <div class="book__btns">
-                  <button class="book__bookmark">Bookmark</button>
-                  <button class="book__more">More Info</button>
-                  <button class="book__read">
-                    <a href="#" class="book__link"></a>
+            <div class="container">
+              <div class="aside__content">
+                <h3 class="aside__title">Bookmarks</h3>
+                <p class="aside__text">
+                  If you don’t like to read, you haven’t found the right book
+                </p>
+              </div>
+              <ul class="aside__list">
+                <li class="aside__item">
+                  <div class="aside__book-inf">
+                    <p class="aside__book-name">Python</p>
+                    <p class="aside__book-author">David M. Beazley</p>
+                  </div>
+                  <button class="aside__read">
+                    <a href="#"
+                      ><img src="../img/open__book.png" alt="icon"
+                    /></a>
                   </button>
-                </div>
-              </li>
-            </ul>
+                  <button class="aside__delete">
+                    <a href="#"><img src="../img/delete.png" alt="icon" /></a>
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </section>
-      <!-- book__part-end -->
+        </section>
+        <!-- aside__part-end -->
+        <!-- book__part -->
+        <section class="book">
+          <div class="container">
+            <div class="book__box">
+              <ul class="book__list">
+                <li class="products__item">
+                  <div class="products__imagebox">
+                    <img
+                      class="products__img"
+                      src="../img/book__card.png"
+                      width="200"
+                      height="200"
+                      alt="book"
+                    />
+                  </div>
+                  <div class="products__box">
+                    <p class="products__name">Python</p>
+                    <p class="products__author">David M. Beazley</p>
+                    <p class="products__year">2009</p>
+                    <div class="products__bottom">
+                      <div class="products__prices">
+                        <p class="products__subprice">22 000 сум</p>
+                        <p class="products__price">9 000 сум</p>
+                      </div>
+                      <button
+                        title="rr"
+                        id="button-basket"
+                        class="products__btnbasket"
+                      >
+                        <svg
+                          data-v-56571d0e=""
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="ui-icon add-cart-icon"
+                        >
+                          <path
+                            d="M8 10V8H6V12.5C6 12.7761 5.77614 13 5.5 13C5.22386 13 5 12.7761 5 12.5V7H8C8 4.59628 9.95227 3 12 3C14.0575 3 16 4.70556 16 7H19V19.5C19 20.3284 18.3284 21 17.5 21H12.5C12.2239 21 12 20.7761 12 20.5C12 20.2239 12.2239 20 12.5 20H17.5C17.7761 20 18 19.7761 18 19.5V8H16V10H15V8H9V10H8ZM12 4C10.4477 4 9 5.20372 9 7H15C15 5.29444 13.5425 4 12 4Z"
+                            fill="black"
+                          ></path>
+                          <path
+                            d="M7.5 14C7.77614 14 8 14.2239 8 14.5V17H10.5C10.7761 17 11 17.2239 11 17.5C11 17.7761 10.7761 18 10.5 18H8V20.5C8 20.7761 7.77614 21 7.5 21C7.22386 21 7 20.7761 7 20.5V18H4.5C4.22386 18 4 17.7761 4 17.5C4 17.2239 4.22386 17 4.5 17H7V14.5C7 14.2239 7.22386 14 7.5 14Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- book__part-end -->
+      </div>
     </main>
     <!-- main__part-end -->
 
@@ -176,6 +153,9 @@
     <!-- footer__part-end -->
 
     <!-- tepmlade__part -->
+    <div class="container">
+      <template id="product-template"> </template>
+    </div>
     <!-- templade__part-end -->
 
     <!-- js__part -->
