@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/home__page.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -16,6 +12,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/home__page.css" />
     <title>Exam__4__Javoxir__Xabibullaev</title>
   </head>
   <body>
@@ -39,7 +40,6 @@
       </div>
     </header>
     <!-- header__part-end -->
-
     <!-- main__part -->
     <main>
       <!-- filter__section -->
@@ -55,6 +55,65 @@
         </div>
       </section>
       <!-- filter__section-end -->
+      <!-- swiper__part -->
+      <section class="hero">
+        <div class="cantainer">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  width="1194"
+                  data-v-8f82691c=""
+                  src="../img/swiper1.jpg"
+                  alt="Акции, подборки товаров и новости Uzum"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  width="1194"
+                  data-v-8f82691c=""
+                  src="../img/swiper2.jpg"
+                  alt="Акции, подборки товаров и новости Uzum"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  width="1194"
+                  data-v-8f82691c=""
+                  src="../img/swiper3.jpg"
+                  alt="Акции, подборки товаров и новости Uzum"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  width="1194"
+                  data-v-8f82691c=""
+                  src="../img/swiper4.jpg"
+                  alt="Акции, подборки товаров и новости Uzum"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  width="1194"
+                  data-v-8f82691c=""
+                  src="../img/swiper5.jpg"
+                  alt="Акции, подборки товаров и новости Uzum"
+                />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <!-- swiper__part-end -->
+      <!-- main-flex__part -->
       <div class="main-flex container">
         <!-- aside__part -->
         <section class="aside">
@@ -87,10 +146,10 @@
         </section>
         <!-- aside__part-end -->
         <!-- book__part -->
-        <section class="book">
+        <section class="products">
           <div class="container">
-            <div class="book__box">
-              <ul class="book__list">
+            <div class="products__box-out">
+              <ul class="products__list">
                 <li class="products__item">
                   <div class="products__imagebox">
                     <img
@@ -105,35 +164,12 @@
                     <p class="products__name">Python</p>
                     <p class="products__author">David M. Beazley</p>
                     <p class="products__year">2009</p>
-                    <div class="products__bottom">
-                      <div class="products__prices">
-                        <p class="products__subprice">22 000 сум</p>
-                        <p class="products__price">9 000 сум</p>
-                      </div>
-                      <button
-                        title="rr"
-                        id="button-basket"
-                        class="products__btnbasket"
-                      >
-                        <svg
-                          data-v-56571d0e=""
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="ui-icon add-cart-icon"
-                        >
-                          <path
-                            d="M8 10V8H6V12.5C6 12.7761 5.77614 13 5.5 13C5.22386 13 5 12.7761 5 12.5V7H8C8 4.59628 9.95227 3 12 3C14.0575 3 16 4.70556 16 7H19V19.5C19 20.3284 18.3284 21 17.5 21H12.5C12.2239 21 12 20.7761 12 20.5C12 20.2239 12.2239 20 12.5 20H17.5C17.7761 20 18 19.7761 18 19.5V8H16V10H15V8H9V10H8ZM12 4C10.4477 4 9 5.20372 9 7H15C15 5.29444 13.5425 4 12 4Z"
-                            fill="black"
-                          ></path>
-                          <path
-                            d="M7.5 14C7.77614 14 8 14.2239 8 14.5V17H10.5C10.7761 17 11 17.2239 11 17.5C11 17.7761 10.7761 18 10.5 18H8V20.5C8 20.7761 7.77614 21 7.5 21C7.22386 21 7 20.7761 7 20.5V18H4.5C4.22386 18 4 17.7761 4 17.5C4 17.2239 4.22386 17 4.5 17H7V14.5C7 14.2239 7.22386 14 7.5 14Z"
-                            fill="black"
-                          ></path>
-                        </svg>
+                    <div class="products__btns">
+                      <button class="products__bookmark">Bookmark</button>
+                      <button id="myBtn" class="products__moreinfo">
+                        More Info
                       </button>
+                      <button class="products__read">Read</button>
                     </div>
                   </div>
                 </li>
@@ -143,14 +179,65 @@
         </section>
         <!-- book__part-end -->
       </div>
+      <!-- main-flex__part-end -->
     </main>
     <!-- main__part-end -->
 
-    <!-- footer__part -->
-    <footer class="footer">
-      <div class="container"></div>
-    </footer>
-    <!-- footer__part-end -->
+    <!-- modal__part -->
+    <div class="container">
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal__header">
+            <h2 class="modal__header-title">Python</h2>
+            <span class="close"
+              ><img src="../img/Vector.png" alt="icon" />
+            </span>
+          </div>
+          <div class="modal__inf-box">
+            <div class="modal__img">
+              <img
+                width="229"
+                height="300"
+                src="../img/book__card.png"
+                alt="book"
+              />
+            </div>
+            <div class="modal__content">
+              <p class="modal__text">
+                Culpa nulla pariatur cupidatat nisi incididunt ea do ipsum.
+                Incididunt quis mollit elit commodo cillum eiusmod reprehenderit
+                labore irure. Cillum et incididunt et nostrud exercitation quis
+                aute laboris non ut adipisicing. Laboris ad minim aute nulla
+                proident deserunt velit anim sunt aliquip ut sit. Exercitation
+                aliquip ullamco officia non aliqua. Sint deserunt aliquip veniam
+                id eiusmod sit consectetur mollit ea aliqua officia consequat.
+                Magna non mollit nisi est commodo voluptate aute id. Deserunt
+                nostrud id do in nisi mollit deserunt non. Pariatur fugiat
+                cillum irure elit sint nisi ad ipsum culpa deserunt cupidatat
+                esse consequat laboris. Id aliquip non consectetur esse proident
+                duis Lorem.
+              </p>
+              <p class="modal__author">
+                Author : <span class="blue">Jamal Kasper</span>
+              </p>
+              <p class="modal__year">
+                Published : <span class="blue">2019</span>
+              </p>
+              <p class="modal__publisher">
+                Publishers: <span class="blue">Hollman</span>
+              </p>
+              <p class="modal__category">
+                Categories: <span class="blue">Computers</span>
+              </p>
+              <p class="modal__pages">
+                Pages Count: <span class="blue">346</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal__part-end -->
 
     <!-- tepmlade__part -->
     <div class="container">
@@ -159,14 +246,14 @@
     <!-- templade__part-end -->
 
     <!-- js__part -->
-    <script src="../js/main.js"></script>
-    <script type="module" src="../js/swiper.js"></script>
-    <script src="../js/books__data.js"></script>
     <script src="../js/find__elements.js"></script>
+    <script type="module" src="../js/swipre.js"></script>
+    <script src="../js/moda.js"></script>
+    <script src="../js/books__data.js"></script>
     <script src="../js/render__books.js"></script>
     <script src="../js/search.js"></script>
     <script src="../js/selected__books.js"></script>
-
+    <script src="../js/main.js"></script>
     <!-- js__part-end -->
   </body>
 </html>

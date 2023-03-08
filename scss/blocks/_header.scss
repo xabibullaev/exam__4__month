@@ -5,8 +5,13 @@
     align-items: center;
     justify-content: space-between;
   }
-
+  &__search-icon {
+    z-index: 5;
+    position: absolute;
+    bottom: 30px;
+  }
   &__search {
+    z-index: 2;
     position: relative;
     margin-left: 56px;
     padding-left: 50px;
@@ -24,6 +29,15 @@
     line-height: 15px;
     color: rgba(0, 0, 0, 0.24);
   }
+  &__search::placeholder {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.24);
+  }
+
   &__ligh-btn {
     width: 23px;
     height: 23px;

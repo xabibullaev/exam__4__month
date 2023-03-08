@@ -1,0 +1,101 @@
+.products {
+  &__box-out {
+    margin-top: 40px;
+    margin-left: 33px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 28px;
+    row-gap: 33px;
+  }
+  &__item {
+    width: 282px;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  &__imagebox {
+    margin: 0 auto;
+    margin-top: 13px;
+    width: 250px;
+    background: #f8fafd;
+    border-radius: 5px;
+  }
+  &__imagebox img {
+    margin: 18px 0;
+    margin-left: 25px;
+  }
+  &__box {
+    margin-left: 21px;
+  }
+  &__name {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+  }
+  &__author {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #757881;
+  }
+  &__year {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #757881;
+  }
+  &__bookmark {
+    padding: 10px 25px;
+    width: 120px;
+    border: none;
+    background: #ffd80d;
+    border-radius: 4px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+  &__moreinfo {
+    margin-left: 6px;
+    padding: 10px 28px;
+    width: 120px;
+    border: none;
+    background: rgba(13, 117, 255, 0.05);
+    border-radius: 4px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0d75ff;
+  }
+  &__read {
+    margin-top: 15px;
+    padding: 10px 0;
+    border: none;
+    width: 246px;
+    background: #75828a;
+    border-radius: 4px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+  &__btns {
+    margin-top: 10px;
+  }
+}

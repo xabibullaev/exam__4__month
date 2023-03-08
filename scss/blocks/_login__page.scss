@@ -37,6 +37,23 @@
     text-transform: uppercase;
     outline: none;
   }
+  &__user::placeholder {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  &__user:active {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    outline: none;
+  }
   &__logo {
     margin-left: 30px;
     margin-bottom: 50px;
@@ -61,6 +78,15 @@
     height: 45px;
     border: 1px solid #ffffff;
     border-radius: 4px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__pass::placeholder {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 300;
