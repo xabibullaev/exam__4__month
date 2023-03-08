@@ -27,6 +27,7 @@
           <img src="../img/main__logo.png" alt="logo" class="header__logo" />
           <form id="header__form">
             <input
+              id="search"
               type="search"
               class="header__search"
               placeholder="Search books"
@@ -150,12 +151,22 @@
           <div class="container">
             <div class="products__box-out">
               <ul class="products__list"></ul>
+              <!-- SPINNER -->
+
+              <div class="spinner" role="status">
+                <span class="hidden"></span>
+              </div>
             </div>
           </div>
         </section>
         <!-- book__part-end -->
       </div>
       <!-- main-flex__part-end -->
+      <div>
+        <button class="pagination__btns-pg" type="button">preview</button>
+        <span class="pagination__page-rs">1</span>
+        <button class="pagination__btns-pg" type="button">next</button>
+      </div>
     </main>
     <!-- main__part-end -->
 
@@ -217,7 +228,7 @@
 
     <!-- tepmlade__part -->
     <div class="container">
-      <template id="product-template">
+      <template id="template">
         <li class="products__item">
           <div class="products__imagebox">
             <img
@@ -240,10 +251,15 @@
           </div>
         </li>
       </template>
+      <template id="errorTemplate">
+        <p class="js-errot-text text-red fw-bold fs-3"></p>
+      </template>
     </div>
+
     <!-- templade__part-end -->
 
     <!-- js__part -->
+    <script src="../js/data.js"></script>
     <script type="module" src="../js/swipre.js"></script>
     <script src="../js/modal.js"></script>
     <script src="../js//main.js"></script>
