@@ -1,3 +1,4 @@
+"use strict";
 // Get the modal
 var modal = document.getElementById("myModal");
 
